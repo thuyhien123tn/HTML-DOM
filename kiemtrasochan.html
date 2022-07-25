@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiemtraso</title>
+</head>
+<body>
+    <p>Nhập số</p><br/>
+    <input type="number" id ="number" placeholder="nhập 1 số">
+    <button onclick="check()">Kiểm tra</button>
+    <div id="result"></div> 
+<script>
+const check = () => {
+  let a = +document.getElementById("number").value;
+  let checkRusult = false;
+  if (a % 2 == 0 ) {
+    checkRusult = true;
+  }
+  const h3 = document.getElementById("result");
+  if (checkRusult) {
+    alert(a + " là số chẵn");
+  } else {
+    alert(a + " là số lẻ");
+  }
+}
+
+</script>>
+
+</body>
+</html>

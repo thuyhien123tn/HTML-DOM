@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input id="variable1" type="number">
+    <input type="number" id="variabale2">
+    </br>
+    </br>
+    <button onclick="addition()">Addition(+)</button>
+    <button onclick="subtraction()">Subtraction(-)</button>
+    <button onclick="multiplication()">Multiplication(x)</button>
+    <button onclick="division()">Division(/)</button>
+    <div id="result"></div>
+    <script>
+        const addition = () => {
+  let a = parseFloat(document.getElementById("variable1").value);
+  let b = +document.getElementById("variabale2").value;
+  let result = a + b;
+  const h3 = document.getElementById("result");
+  h3.innerHTML = "Result addition: " + result;
+}
+
+const subtraction = () => {
+  let a = +document.getElementById("variable1").value;
+  let b = +document.getElementById("variabale2").value;
+  let result = a - b;
+  const h3 = document.getElementById("result");
+  h3.innerHTML = "Result subtraction: " + result;
+}
+
+const multiplication = () => {
+  let a = +document.getElementById("variable1").value;
+  let b = +document.getElementById("variabale2").value;
+  let result = a * b;
+  const h3 = document.getElementById("result");
+  h3.innerHTML = "Result multiplication: " + result;
+}
+
+const division = () => {
+  let a = +document.getElementById("variable1").value;
+  let b = +document.getElementById("variabale2").value;
+  let result = a / b;
+  const h3 = document.getElementById("result");
+  h3.innerHTML = "Result division: " + result;
+}
+    </script>
+</body>
+</html>
